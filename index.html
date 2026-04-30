@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <div class="about">
+    <h3>WELCOME</h3>
+    <p>
+        Hello! My name is Vicky Kumar.
+I am a passionate learner in web development and I enjoy building simple and useful projects using HTML, CSS, and JavaScript.
+
+This Age Calculator project is one of my practice projects where I explored JavaScript logic, DOM manipulation, and real-time calculations.
+I aim to improve my skills and build more advanced web applications in the future.
+    </p>
+</div>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌟 Age Calculator 🌟</h2>
+    <input type="text" id="name" placeholder="Enter Your Name">
+<br><br>
+
+<select id="gender">
+    <option value="">Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+</select>
+
+<br><br>
+
+    <h3>DOB</h3>
+
+    <input type="date" id="dob">
+    <br><br>
+
+    <button onclick="calculateAge()">Calculate</button>
+
+    <div id="result"></div>
+    <div id="finalText" class="final-msg"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
