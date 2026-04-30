@@ -22,7 +22,8 @@ function randomColor() {
 
 function calculateAge() {
     let name = document.getElementById("name").value;
-    let gender = document.getElementById("gender").value; 
+    let gender = document.querySelector('input[name="gender"]:checked');
+    gender = gender ? gender.value : "Not Selected";
     let dob = document.getElementById("dob").value;
     let result = document.getElementById("result");
 

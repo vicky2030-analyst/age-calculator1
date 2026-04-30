@@ -219,3 +219,59 @@ button:last-child {
 button:last-child:hover {
     transform: scale(1.05);
 }
+
+input[type="radio"] {
+    margin: 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+label {
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+/* Hide default radio */
+input[type="radio"] {
+    display: none;
+}
+
+/* Custom label button */
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Hover effect */
+input[type="radio"] + label:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+/* Selected state animation */
+input[type="radio"]:checked + label {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+/* Small pulse animation when selected */
+input[type="radio"]:checked + label {
+    animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1.1); }
+}
